@@ -3,9 +3,9 @@ Docker compose para implmentação/disponibilização do Sql Server 2019
 
 ## Pré-requisito
 - Docker instalado na máquina
-- Acesso a rede para baixar a imagem
+- Acesso à Internet para baixar a imagem
 - Crie uma pasta chamada de [dados] um nível abaixo da pasta raiz deste projeto.
-  - Esta pasta será utilizado para compartilhamento entre volumes
+  - Esta pasta será utilizada para compartilhamento entre volumes e evitar que ocorra perda de dados ao encerrar o container
 
 ## Comando para iniciar o container
 ```
