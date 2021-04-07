@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql1
+    environment:
+     - ACCEPT_EULA=Y
+     - SA_PASSWORD=Password_123
+    ports:
+     - "1433:1433"
+    volumes:
+     - ../dados:/var/opt/mssql/data
+    networks:
+      - pwf-network
+networks:
+  pwf-network:
+    name: pwf-network
+    driver: bridge
+
+
+
