@@ -8,11 +8,22 @@ Docker compose para implmentação/disponibilização do Sql Server 2019
   - Esta pasta será utilizada para compartilhamento entre volumes e evitar que ocorra perda de dados ao encerrar o container
 
 ## Comando para iniciar o container
+O comando abaixo deverá ser executado dentro da pasta raiz do projeto
 ```
 docker-compose up -d
 ```
 
-## Comandos para encerrar o container
+# Comando para iniciar o container
+```
+docker start sql1
+```
+
+# Comando para parar o container
+```
+docker stop sql1
+```
+
+## Comandos para encerrar/destruir o container
 ```
 docker-compose down
 ```
